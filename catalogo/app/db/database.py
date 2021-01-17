@@ -1,5 +1,6 @@
 import psycopg2
 from flask import g
+import os
 
 def get_db():
 
