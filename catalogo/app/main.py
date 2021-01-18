@@ -30,7 +30,7 @@ def get_product_by_sku(sku):
 		product = get_product(sku)
 		product['cache'] = 'miss'
 #		redis_client.hmset(product['sku'], product)
-		if redic_client:
+		if redis_client:
 			redis_client.hmset(product['sku'], product)
 	else:
 		pass
