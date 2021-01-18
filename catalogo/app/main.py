@@ -1,5 +1,5 @@
 
-m flask import jsonify, request, Flask, make_response
+from flask import jsonify, request, Flask, make_response
 from catalog import get_products, create_product, get_product
 from flask_cors import CORS
 import os
